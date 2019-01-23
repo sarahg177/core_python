@@ -3,7 +3,17 @@ def even_number_of_evens(numbers):
     if numbers == []:
         return False
     else:
-        return True
+       #set evens variable to 0
+       evens = 0
+    
+    # check to see if number is divided by 2 then the remainder is 0 
+    for number in numbers:
+        if number %2 == 0:
+            # increment evens variable by 1
+            evens +=1
+    
+            
+    return evens %2 == 0
        
          
          

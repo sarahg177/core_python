@@ -1,6 +1,3 @@
-def number_of_evens(numbers):
-    return 0
-
 def test_are_equal(actual, expected):
     assert expected == actual, "Expected {0}, got {1}".format (expected, actual)
     
@@ -25,4 +22,6 @@ def test_between(upper_limit, lower_limit, actual):
 
 # test_not_in([1], 1)
 
-test_between(6, 1, 10 )
+# test_between(6, 1, 10 )
+
+test_are_equal(1, 2)

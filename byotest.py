@@ -24,4 +24,4 @@ def test_between(upper_limit, lower_limit, actual):
 
 # test_between(6, 1, 10 )
 
-test_are_equal(1, 2)
+# test_are_equal(1, 2)

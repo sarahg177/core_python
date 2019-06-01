@@ -1,22 +1,22 @@
+def is_even(number):
+    return number %2 ==0
+
 def even_number_of_evens(numbers):
-    #check to see if array is empty
-    if numbers == []:
-        return False
-    else:
        #set evens variable to 0
-       evens = 0
+        evens = 0
     
     # check to see if number is divided by 2 then the remainder is 0 
-    for number in numbers:
-        if number %2 == 0:
+        for number in numbers:
+            if is_even(number):
             # increment evens variable by 1
-            evens +=1
+                evens +=1
     
     # if 0 is divided by 2 the answer will be 0 so add if evens == 0 return false
-    if evens == 0:
-        return False
+        if evens == 0:
+            return False
+        else:
     #check to see if the number of evens when divided by 2 then the remainder is 0        
-    return evens %2 == 0
+            return is_even(evens) == 0
        
          
          
